@@ -2,19 +2,16 @@ programa
 {
     funcao inicio()
     {
-        // Defining variables
         caracter gabarito[5]
         inteiro notas[6], somaNotas = 0, menorNota = 10, maiorNota = 0, acimaDaMedia = 0, i, aluno, questao
         real media
 
-        // Reading the answer key
         escreva("Digite o gabarito das 5 questões: ")
         para(i = 0; i < 5; i++)
         {
             leia(gabarito[i])
         }
 
-        // Loop through each student
         para(aluno = 0; aluno < 6; aluno++)
         {
             caracter nome[6]
@@ -23,7 +20,6 @@ programa
             escreva("Digite o nome do aluno ", aluno + 1, ": ")
             leia(nome[aluno])
 
-            // Reading student's answers
             para(questao = 0; questao < 5; questao++)
             {
                 caracter resposta
